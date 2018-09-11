@@ -1,0 +1,66 @@
+body, html {
+	margin: 0;
+    padding: 0;
+}
+#corpo{
+    width: 100%;
+    height: 100%;
+}
+
+#paginaJogo{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(100, 100, 100, 0.5);
+}
+.imgWrapper{
+    --pri: calc(1348 / 768);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 65%;
+    height: calc(32.5vw * var(--pri));
+    transform: translate(-50%, -50%);
+}
+.imgWrapper img{
+    position: absolute;
+    width: 100%;
+}
+
+#form{
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(200, 200, 200, 0.5);
+}
+.formWrapper{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 95%;
+    transform: translate(-50%);
+}
+.labelClass{
+    display: inline-block;
+    min-width: 60px;
+}
+
+#modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.836);
+}
+.modalWrapper{
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}

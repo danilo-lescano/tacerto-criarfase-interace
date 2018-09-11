@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<link rel="icon" type="image/png" href="resources/media/image/LOGO-ABERTURA.png">
+	<title>Ta Certo?</title>
+
+	<link href='resources/css/style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id="corpo">
+        <div id="form">
+            <div class="formWrapper">
+                <div id="palavra">
+                    <div class="labelClass"><label>Palavras corretas:</label></div>
+                    <input class="palavra" type="text" data-flag="false" onchange="palavra(this);">
+                </div>
+                <div id="palavraE">
+                    <div class="labelClass"><label>Palavras erradas:</label></div>
+                    <input class="palavraE" type="text" data-flag="false" onchange="palavraE(this);">
+                </div>
+                <button onclick="enviar();">Enviar</button>
+            </div>
+        </div>
+        <div id="paginaJogo">
+            <div class="imgWrapper">
+                <img src="resources/media/image/jogoNormal.png">
+            </div>
+        </div>
+
+
+        <div id="modal">
+            <div class="modalWrapper">
+                <h3 id="h3palavra"></h3>
+                <label>Uma dica para quando os alunos sentirem dificuldade:</label><br>
+                <textarea id="dica" cols="40" rows="5"></textarea> <br>
+                <label>O nome do nivel:</label><br>
+                <input id="nivel" type="text"><br>
+                
+
+                <button id="modalBtn">Alterar</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="resources/js/javascript.js"></script>
+</html> 
